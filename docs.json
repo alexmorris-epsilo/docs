@@ -1,120 +1,147 @@
 {
+
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
   "name": "Epsilo Docs",
+  "description": "Unified workspace for retail media teams.",
+  "logo": {
+    "light": "/logo/dark.svg",
+    "dark": "/logo/light.svg",
+    "href": "https://one.epsilo.io"
+  },
+
+  "favicon": "/favicon.svg",
   "colors": {
     "primary": "#2563EB"
   },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+
+  "appearance": {
+    "default": "system"
+  },
+  "styling": {
+    "eyebrows": "section",
+    "codeblocks": "system",
+    "toc": {
+      "enabled": true,
+      "depth": 3,
+      "position": "right",
+      "collapsible": true
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "fonts": {
+    "family": "Inter"
   },
+
+  "contextual": {
+    "options": 
+    ["copy",
+    "view",
+    "chatgpt"]
+  },
+  
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Sign in",
+      "href": "https://one.epsilo.io"
     }
   },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+
+  "navigation": {
+    "groups": [
+      {
+        "group": " ",
+        "pages": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "a-getting-started/start-guide",
+              "a-getting-started/quick-start-new-admin",
+              "a-getting-started/quick-start-new-operator"
+            ]
+          },
+          {
+            "group": "Workspace",
+            "expanded": false,
+            "pages": [
+              "b-workspace/workspace-setting",
+              "b-workspace/invite-members",
+              "b-workspace/login-methods",
+              "b-workspace/billing-and-plans",
+              "b-workspace/channels-and-integrations"
+            ]
+          },
+          {
+            "group": "Unified Campaign",
+            "expanded": false,
+            "pages": [
+              "c-unified-campaign/default-campaign",
+              "c-unified-campaign/create-campaign",
+              "c-unified-campaign/duplicate-campaign",
+              "c-unified-campaign/apply-rules"
+            ]
+          },
+          {
+            "group": "Budget Management",
+            "expanded": false,
+            "pages": [
+              "d-budget-management/budget-planning",
+              "d-budget-management/budget-distribution",
+              "d-budget-management/budget-lock",
+              "d-budget-management/manual-and-auto-mode"
+            ]
+          },
+          {
+            "group": "Scheduling Actions",
+            "expanded": false,
+            "pages": [
+              "e-scheduling-actions/schedule-budget",
+              "e-scheduling-actions/schedule-status",
+              "e-scheduling-actions/schedule-storefront"
+            ]
+          },
+          {
+            "group": "Workspace Booster",
+            "expanded": false,
+            "pages": [
+              "g-workspace-intelligence/filter-and-advanced-filtering",
+              "g-workspace-intelligence/sort-group-and-multi-group",
+              "g-workspace-intelligence/view-modes-and-saved-views",
+              "g-workspace-intelligence/bulk-action",
+              "g-workspace-intelligence/mass-action"
+            ]
+          },
+          {
+            "group": "Agentic AI",
+            "expanded": false,
+            "pages": ["f-agentic-ai/botep-ai"]
+          },
+
+          {
+            "group": "Insight & Analytics",
+            "expanded": false,
+            "pages": [
+              "h-insight-and-analytics/keyword-lab",
+              "h-insight-and-analytics/digital-shelf-analytics"
+            ]
+          },
+          {
+            "group": "Playbooks",
+            "expanded": false,
+            "pages": [
+              "i-playbooks/ad-spend-optimization",
+              "i-playbooks/hyper-automation-scripts",
+              "i-playbooks/thinking-in-campaigns"
+            ]
+          }
+        ]
+      }
+    ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
+
+  "head": [
+    "<link rel=\"stylesheet\" href=\"/style.css?v=5\" />",
+    "<script src=\"/topnav.js?v=5\" defer></script>"
+  ]
 }
