@@ -5,8 +5,8 @@
   "name": "Epsilo Docs",
   "description": "Unified workspace for retail media teams.",
   "logo": {
-    "light": "/logo/dark.svg",
-    "dark": "/logo/light.svg",
+    "light": "/images/light.svg",
+    "dark": "/images/light.svg",
     "href": "https://one.epsilo.io"
   },
 
@@ -27,6 +27,9 @@
       "position": "right",
       "collapsible": true
     }
+  },
+  "interaction": {
+    "drilldown": false
   },
     "fonts": {
     "family": "Inter"
@@ -51,90 +54,123 @@
   "navigation": {
     "groups": [
       {
-        "group": " ",
+        "group": "Marketing automation",
+        "expanded": false,
         "pages": [
           {
-            "group": "Getting Started",
+            "group": "Getting started",
+            "expanded": false,
             "pages": [
-              "a-getting-started/start-guide",
-              "a-getting-started/quick-start-new-admin",
-              "a-getting-started/quick-start-new-operator"
+              "1-getting-started/login-methods",
+              "1-getting-started/quick-start-new-operator"
             ]
           },
           {
             "group": "Workspace",
             "expanded": false,
             "pages": [
-              "b-workspace/workspace-setting",
-              "b-workspace/invite-members",
-              "b-workspace/login-methods",
-              "b-workspace/billing-and-plans",
-              "b-workspace/channels-and-integrations"
+              "2-workspace/workspace-setting",
+              "2-workspace/members-and-roles",
+              "2-workspace/invite-members",
+              "2-workspace/user-access",
+              "2-workspace/channels-and-integrations",
+              "2-workspace/billing-and-plans",
+              "2-workspace/notifications"
             ]
           },
           {
-            "group": "Unified Campaign",
+            "group": "Tables",
             "expanded": false,
             "pages": [
-              "c-unified-campaign/default-campaign",
-              "c-unified-campaign/create-campaign",
-              "c-unified-campaign/duplicate-campaign",
-              "c-unified-campaign/apply-rules"
+              "3-tables/filter-and-advanced-filtering",
+              "3-tables/sort-group-and-multi-group",
+              "3-tables/view-modes-and-saved-views",
+              "3-tables/conditional-formatting",
+              "3-tables/mass-action",
+              "3-tables/bulk-action",
+              "3-tables/history-logs",
+              "3-tables/custom-workflows"
             ]
           },
           {
-            "group": "Budget Management",
+            "group": "Campaigns",
             "expanded": false,
             "pages": [
-              "d-budget-management/budget-planning",
-              "d-budget-management/budget-distribution",
-              "d-budget-management/budget-lock",
-              "d-budget-management/manual-and-auto-mode"
+              "4-campaigns/shopee-campaigns",
+              "4-campaigns/lazada-campaigns",
+              "4-campaigns/tiktok-shop-campaigns",
+              "4-campaigns/campaign-use-cases",
+              "4-campaigns/ad-statuses"
             ]
           },
           {
-            "group": "Scheduling Actions",
+            "group": "Budget distribution",
             "expanded": false,
             "pages": [
-              "e-scheduling-actions/schedule-budget",
-              "e-scheduling-actions/schedule-status",
-              "e-scheduling-actions/schedule-storefront"
+              "5-budget-distribution/distribution-models",
+              "5-budget-distribution/budget-lock"
             ]
           },
           {
-            "group": "Workspace Booster",
+            "group": "Scheduling",
             "expanded": false,
             "pages": [
-              "g-workspace-intelligence/filter-and-advanced-filtering",
-              "g-workspace-intelligence/sort-group-and-multi-group",
-              "g-workspace-intelligence/view-modes-and-saved-views",
-              "g-workspace-intelligence/bulk-action",
-              "g-workspace-intelligence/mass-action"
+              "6-scheduling/schedule-budget",
+              "6-scheduling/schedule-status",
+              "6-scheduling/target-roas-scheduling",
+              "6-scheduling/distribution-model-scheduling"
             ]
           },
           {
-            "group": "Agentic AI",
-            "expanded": false,
-            "pages": ["f-agentic-ai/botep-ai"]
-          },
-
-          {
-            "group": "Insight & Analytics",
+            "group": "Scripts",
             "expanded": false,
             "pages": [
-              "h-insight-and-analytics/keyword-lab",
-              "h-insight-and-analytics/digital-shelf-analytics"
+              "7-scripts/creatin7-scripts",
+              "7-scripts/script-use-cases"
             ]
           },
           {
-            "group": "Playbooks",
+            "group": "Data",
             "expanded": false,
             "pages": [
-              "i-playbooks/ad-spend-optimization",
-              "i-playbooks/hyper-automation-scripts",
-              "i-playbooks/thinking-in-campaigns"
+              "8-data/data-exporting",
+              "8-data/data-syncing",
+              "8-data/faqs"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "expanded": false,
+            "pages": [
+              "9-integrations/email",
+              "9-integrations/slack",
+              "9-integrations/google-sheets"
+            ]
+          },
+          {
+            "group": "AI",
+            "expanded": false,
+            "pages": [
+              "10-ai/botep-analytics"
             ]
           }
+        ]
+      },
+      {
+        "group": "Keyword lab",
+        "expanded": false,
+        "pages": [
+          "11-keyword-lab/storefront-mining",
+          "11-keyword-lab/key-concepts",
+          "11-keyword-lab/faqs"
+        ]
+      },
+      {
+        "group": "Digital shelf analytics",
+        "expanded": false,
+        "pages": [
+          "12-digital-shelf-analytics/shelf-scraping",
+          "12-digital-shelf-analytics/key-concepts"
         ]
       }
     ]

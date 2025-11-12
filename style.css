@@ -1,0 +1,14 @@
+/* Navigation dropdown transitions */
+.nav-dropdown-content {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.nav-dropdown-content.open,
+.nav-dropdown-content[aria-expanded="true"],
+.nav-dropdown-content:not([hidden]) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
