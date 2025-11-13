@@ -37,10 +37,11 @@
   },
 
   "contextual": {
-    "options": 
-    ["copy",
-    "view",
-    "chatgpt"]
+    "options": [
+      "copy",
+      "view",
+      "chatgpt"
+    ]
   },
   
   "navbar": {
