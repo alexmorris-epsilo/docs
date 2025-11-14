@@ -47,6 +47,10 @@
   "navbar": {
     "links": [
       {
+        "label": "Documentation",
+        "href": "https://epsilo-f0bc880e.mintlify.app/"
+      },
+      {
         "label": "Sign in",
         "href": "https://one.epsilo.io/login"
       },

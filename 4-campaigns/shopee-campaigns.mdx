@@ -1,22 +1,156 @@
 ---
 title: "Shopee campaigns"
-description: "Manage Shopee campaigns"
+description: "A guide to creating and managing Shopee campaigns and ad tools on Epsilo."
 icon: "s"
 ---
 
-# Shopee campaigns
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<Frame>
+  <img src="/images/hero-light.png" alt="Shopee campaigns dashboard showing campaign management interface" />
+</Frame>
 
 ## Overview
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+A campaign is a structured group of ads that organizes your advertised products with four levels: campaign (the ad tool container), ad object (individual SKUs), ad placement (where ads appear), and ad creative (for TikTok). You can create various campaign types including Product Ads (GMV Max, Manual), Shop Ads, Brand Ads (Search, Homepage), and Live Ads. Key features include automated budget distribution and status management to optimize your ad performance.
 
-## Creating campaigns
+## What is a campaign
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+A campaign is a structured group of ads (ad objects). It serves as a container that defines how you group your advertised products. Think of it as a folder holding your ad objects (SKUs), their rules, and optimization settings.
 
-## Managing campaigns
+## Campaign structure
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<ResponseField name="Campaign level">
+  This is the highest level of the ad structure, housing all ad units within it. Campaigns are matched 1-to-1 with ad tools (e.g., Shopee GMV Max, Lazada Sponsored Discovery, TikTok In-Feed). Inside, you group SKUs/ad objects with a common purpose (e.g., top sellers, new launching products).
+</ResponseField>
 
+<ResponseField name="Ad object level">
+  The next level down under campaigns are ad objects, the product (SKU) level. This is the item that you are choosing to advertise. This may include other ad objects such as Shop Ads.
+</ResponseField>
+
+<ResponseField name="Ad placement level">
+  This is the lowest level of ads on Epsilo, where your item will be advertised. This location can be explicit such as a specific keyword placement, or a more general placement like discovery or automated.
+</ResponseField>
+
+<ResponseField name="Ad creative level">
+  This applies for TikTok Shop campaigns where you manage the creatives/videos that are running on your campaigns.
+</ResponseField>
+
+## Creating a campaign
+
+<Steps>
+  <Step title="Click on buttons for new campaign">
+    Navigate to the campaigns section and click the button to create a new campaign.
+  </Step>
+
+  <Step title="Complete required fields">
+    Start by giving your campaign a name and completing all the required fields.
+  </Step>
+
+  <Step title="Select campaign components">
+    Select ad objects, ad placement, ad creatives, and targets.
+  </Step>
+
+  <Step title="Publish your campaign">
+    Click "Publish" to go live.
+  </Step>
+</Steps>
+
+## Product Ads
+
+<Tabs>
+  <Tab title="GMV Max">
+    GMV Max campaigns automatically optimize your ad spend to maximize gross merchandise value. This campaign type uses machine learning to distribute your budget across your best-performing products.
+
+    To create a GMV Max campaign:
+    1. Select "Product Ads" as your campaign type
+    2. Choose "GMV Max" as the optimization strategy
+    3. Set your budget and select your target products
+    4. Configure your campaign settings and publish
+  </Tab>
+
+  <Tab title="Manual">
+    Manual Product Ads give you full control over your campaign settings, including bid management, keyword targeting, and budget allocation.
+
+    To create a Manual Product Ad campaign:
+    1. Select "Product Ads" as your campaign type
+    2. Choose "Manual" as the campaign mode
+    3. Set up your ad objects, placements, and bidding strategy
+    4. Configure targeting options and publish your campaign
+  </Tab>
+</Tabs>
+
+## Shop Ads
+
+<Tabs>
+  <Tab title="Shop Ads">
+    Shop Ads promote your entire store rather than individual products. This helps increase overall store visibility and traffic.
+
+    To create Shop Ads:
+    1. Select "Shop Ads" as your campaign type
+    2. Configure your shop-level targeting and budget
+    3. Set your campaign objectives and optimization settings
+    4. Publish to start promoting your shop
+  </Tab>
+</Tabs>
+
+## Brand Ads
+
+<Tabs>
+  <Tab title="Search brand ads">
+    Search Brand Ads appear when users search for your brand or related keywords. These ads help increase brand visibility in search results.
+
+    To create Search Brand Ads:
+    1. Select "Brand Ads" as your campaign type
+    2. Choose "Search" as the placement type
+    3. Set up your brand keywords and targeting
+    4. Configure your ad creative and budget
+    5. Publish your campaign
+  </Tab>
+
+  <Tab title="Homepage brand ads">
+    Homepage Brand Ads display your brand on the marketplace homepage, reaching a broad audience of potential customers.
+
+    To create Homepage Brand Ads:
+    1. Select "Brand Ads" as your campaign type
+    2. Choose "Homepage" as the placement type
+    3. Upload your brand creative assets
+    4. Set your targeting and budget parameters
+    5. Publish to start displaying on the homepage
+  </Tab>
+</Tabs>
+
+## Live Ads
+
+<Tabs>
+  <Tab title="Live Ads">
+    Live Ads promote your live streaming sessions, helping you reach more viewers and increase engagement during your broadcasts.
+
+    To create Live Ads:
+    1. Select "Live Ads" as your campaign type
+    2. Connect your live streaming schedule
+    3. Set your targeting and budget
+    4. Configure promotion settings
+    5. Publish to start promoting your live sessions
+  </Tab>
+</Tabs>
+
+## Campaign features
+
+<ResponseField name="Budget management">
+  Automate budget allocation and reallocation across your SKUs with Epsilo's intelligent budget distribution feature. Set distribution models to optimize your ad spend automatically.
+</ResponseField>
+
+<ResponseField name="Status management">
+  Control your campaign status with automated scheduling. Pause, activate, or modify campaigns based on performance metrics or time-based rules.
+</ResponseField>
+
+## FAQs
+
+<AccordionGroup>
+  <Accordion title="What ad tools are currently available to operate on Epsilo?">
+    We're constantly closing the gap on campaigns available on the marketplaces to be available on Epsilo. When you are selecting your ad tool, you'll see all the current ad tools that we offer. Don't see the ad tool you're looking for? Let us know at [support@epsilo.io](mailto:support@epsilo.io)
+  </Accordion>
+
+  <Accordion title="What does the distribution model do?">
+    This is a setting for Epsilo's Budget distribution feature, that automates the budget allocation and reallocation process across SKUs. Read about it in this article.
+  </Accordion>
+</AccordionGroup>
